@@ -13,7 +13,7 @@
 #include "get_next_line.h"
 #include <limits.h>
 
-#define BUFFER_SIZE 50
+#define BUFFER_SIZE 2
 
 int ft_srchline( char *s)
 {
