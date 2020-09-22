@@ -6,7 +6,7 @@
 /*   By: mpasturi <mpasturi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/19 20:20:49 by mpasturi          #+#    #+#             */
-/*   Updated: 2020/09/14 20:44:47 by mpasturi         ###   ########.fr       */
+/*   Updated: 2020/09/21 21:34:25 by mpasturi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ size_t	ft_strlen(const char *s)
 
 char	*ft_free(char *s)
 {
-	free (s);
+	free(s);
 	s = NULL;
 	return (s);
 }
