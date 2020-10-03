@@ -6,7 +6,7 @@
 /*   By: mpasturi <mpasturi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/19 19:42:13 by mpasturi          #+#    #+#             */
-/*   Updated: 2020/09/21 21:51:45 by mpasturi         ###   ########.fr       */
+/*   Updated: 2020/10/03 17:01:56 by mpasturi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,10 +21,10 @@ int	ft_srchline(char *s)
 	while (s[i] != '\0')
 	{
 		if (s[i] == '\n')
-			return (1);
+			return (0);
 		i++;
 	}
-	return (0);
+	return (1);
 }
 
 int	ft_readfile(int fd, int ret, char **buf)
@@ -46,7 +46,7 @@ int	ft_readfile(int fd, int ret, char **buf)
 	*buf = tmp;
 	ret = ft_srchline(*buf);
 	if (new[0] == '\0')
-		ret = 1;
+		ret = 0;
 	new = ft_free(new);
 	return (ret);
 }
@@ -62,11 +62,10 @@ int	get_next_line(int fd, char **line)
 	if (buf[fd] == NULL)
 		if ((buf[fd] = ft_strdup("")) == NULL)
 			return (-1);
-	i = 0;
-	while (i == 0)
+	i = 1;
+	while (i == 1)
 		if ((i = ft_readfile(fd, i, &buf[fd])) == -1)
 			return (-1);
-	i = 0;
 	while (buf[fd][i] != '\n' && buf[fd][i] != '\0')
 		i++;
 	*line = ft_substr(buf[fd], 0, i);
