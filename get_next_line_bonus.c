@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line.c                                    :+:      :+:    :+:   */
+/*   get_next_line_bonus.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mpasturi <mpasturi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/05/19 19:42:13 by mpasturi          #+#    #+#             */
-/*   Updated: 2020/10/03 17:01:56 by mpasturi         ###   ########.fr       */
+/*   Created: 2020/10/03 17:50:20 by mpasturi          #+#    #+#             */
+/*   Updated: 2020/10/03 18:04:50 by mpasturi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
+#include "get_next_line_bonus.h"
 #include <limits.h>
 
 int	ft_srchline(char *s)
